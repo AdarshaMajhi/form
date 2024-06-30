@@ -4,48 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>The form</title>
   </head>
   <body>
     <div class="container">
-      <hr />
-      <form action="">
+      <div class="line">
+        <hr />
+      </div>
+      <h2 class="head-text">Enter the information</h2>
+      <p class="head-description">Pleas fill out this form.</p>
+      <form action="#">
         <fieldset>
-          <legend>Name: </legend>
-          <input class="info" type="text" />
+          <label for="info">Name:</label><br />
+          <input type="text" id="info" class="info" required />
         </fieldset>
         <fieldset>
-            <legend>Email: </legend>
-          <input class="info" type="email" />
-        </fieldset>  
-          <fieldset>
-            <legend>Phone: (optional)</legend>
-          <input class="info" type="number" />
-          </fieldset>          
-          <fieldset>
-            <legend>Address: </legend>
-          <input class="info" type="text" />
-          </fieldset>          
-          <fieldset>
-            <legend>State: </legend>
-          <input class="info" type="text" />   
-          </fieldset>           
-          <fieldset>
-            <legend>Country: </legend>
-            <select class="country" >
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="gb">United Kingdom</option>
-                <option value="au">Australia</option>
-                <option value="in">India</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Zip Code: </legend>
-          <input class="info" type="number" />
-          </fieldset>         
+          <label for="info">Email:</label><br />
+          <input type="email" id="info" class="info" required />
+        </fieldset>
+        <fieldset>
+          <label for="info">Phone Number:</label><br />
+          <input type="text" maxlength="10" id="info" class="info" required />
+        </fieldset>
+        <fieldset>
+          <label for="info">Birthday:</label><br />
+          <input type="date" id="info" class="info" required />
+          <p class="reason">
+            <span
+              title="We ask for your birthday so we can personalize your experience and send you reminders of upcoming milestones."
+            >
+              Why We need your Birthday
+            </span>
+          </p>
         </fieldset>
       </form>
+      <button class="btn" type="button" >
+        Register
+      </button>
     </div>
   </body>
 </html>
